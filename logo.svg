@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Orbital Diamond logo">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A5CFF"/>
+      <stop offset="0.5" stop-color="#5EE6FF"/>
+      <stop offset="1" stop-color="#2B7BFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5EE6FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5EE6FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.35" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="1" stop-color="#FF9A1F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft glow -->
+  <circle cx="256" cy="250" r="210" fill="url(#glow)"/>
+
+  <!-- orbit: back half (behind the diamond) -->
+  <g transform="rotate(-20 256 256)">
+    <path d="M26 256 A230 70 0 0 1 486 256" fill="none" stroke="url(#ring)" stroke-width="9" stroke-linecap="round" opacity="0.45"/>
+  </g>
+
+  <!-- diamond -->
+  <g stroke="#070B1A" stroke-width="2.5" stroke-linejoin="round">
+    <!-- crown -->
+    <polygon points="116,205 186,140 206,205" fill="#2B7BFF"/>
+    <polygon points="186,140 256,140 206,205" fill="#8FEFFF"/>
+    <polygon points="256,140 206,205 306,205" fill="#E6FBFF"/>
+    <polygon points="256,140 326,140 306,205" fill="#5EE6FF"/>
+    <polygon points="326,140 306,205 396,205" fill="#3D9BFF"/>
+    <!-- pavilion -->
+    <polygon points="116,205 206,205 256,380" fill="#1B3FAE"/>
+    <polygon points="206,205 306,205 256,380" fill="#35B8F5"/>
+    <polygon points="306,205 396,205 256,380" fill="#5A4BE0"/>
+  </g>
+
+  <!-- sparkle -->
+  <path d="M164 92 L170 112 L190 118 L170 124 L164 144 L158 124 L138 118 L158 112 Z" fill="#E6FBFF"/>
+
+  <!-- orbit: front half, with the orbiting energy core -->
+  <g transform="rotate(-20 256 256)">
+    <path d="M26 256 A230 70 0 0 0 486 256" fill="none" stroke="url(#ring)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="371" cy="316.6" r="26" fill="#FFB238" opacity="0.25"/>
+    <circle cx="371" cy="316.6" r="15" fill="url(#sun)" stroke="#070B1A" stroke-width="2.5"/>
+  </g>
+</svg>
