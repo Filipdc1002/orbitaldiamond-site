@@ -1,0 +1,10 @@
+Orbital Diamond Interactive gallery update
+
+This ZIP contains the updated index.html, gallery HTML and eight optimized screenshots.
+
+1. Open the orbitaldiamond-site repository folder in File Explorer.
+2. Extract this ZIP into the root of that folder, replacing index.html when prompted.
+3. Keep existing CNAME, logo.svg, logo.png and other website files unchanged.
+4. In GitHub Desktop review changes. You can delete/uncheck the old orbitaldiamond-early-game-photos.zip from the repository to avoid publishing a duplicate archive.
+5. Commit and Push origin. Cloudflare auto-deploys only if its Pages project is connected to this GitHub repository with automatic deployments enabled.
+6. Verify the Game section's View photos link and all eight photos at https://www.orbitaldiamond.com/early-game-development-photos.html
